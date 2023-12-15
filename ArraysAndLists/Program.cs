@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 
 namespace ArraysAndLists
@@ -53,10 +54,15 @@ namespace ArraysAndLists
             /* Using a for loop,
              * display the numbers in your "odds" list
              */
-            foreach(int i in listOdds)
+            //foreach(int i in listOdds)
+            for(int i = 0; i < listOdds.Count; i++)
              {
-                Console.WriteLine($"The number {i} is odd but you should know this from 1st grade");
+                Console.WriteLine($"The number {listOdds[i]} is odd but you should know this from 1st grade");
+                //Console.WriteLine($"Odds: {listOdds[i]}");
              }
         }
     }
 }
+//for(int i = 0; i < odd.Count; i++)
+//Console.WriteLine($listOdds: {odds[i]}) dale herby asist
+//($"Odds: {listOdds[i]}") dale herby assist
